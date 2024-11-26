@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Login Form Design | CodeLab</title>
+    <link rel="stylesheet" href="/styles/style2.css" />
+  </head>
+  <body>
+    <h1>ONLINE COMPLAINT MANAGEMENT SYSTEM</h1>
+    <div class="wrapper">
+      <div class="title">Login Form</div>
+      <!-- Login Form -->
+      <form id="loginForm">
+        <div class="field">
+          <input type="text" required />
+          <label>Email Address</label>
+        </div>
+        <div class="field">
+          <input type="password" required />
+          <label>Password</label>
+        </div>
+        <div class="content">
+          <div class="checkbox">
+            <input type="checkbox" id="remember-me" />
+            <label for="remember-me">Remember me</label>
+          </div>
+          <div class="pass-link">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <div class="field">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+
+    <!-- JavaScript to redirect after login -->
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent form submission (for demo purposes)
+
+          // Check login credentials here (for real, you'd make an API call)
+          // Simulating successful login
+          window.location.href = "complaint-form.html"; // Redirect to complaint form page
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="/styles/style3.css" />
+    <script>
+      function submitComplaint() {
+        alert("Complaint submitted!");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Submit Your Complaint</h1>
+    <div class="wrapper">
+      <form action="/pages/index3.html" method="get" enctype="multipart/form-data">
+        <div class="field">
+          <input type="text" id="name" name="name" required />
+          <label for="name">Name</label>
+        </div>
+
+        <div class="field">
+          <input type="email" id="email" name="email" required />
+          <label for="email">Email</label>
+        </div>
+
+        <div class="field">
+          <input type="text" id="subject" name="subject" required />
+          <label for="subject">Subject of Complaint</label>
+        </div>
+
+        <div class="field">
+          <input type="text" id="location" name="location" required />
+          <label for="location">Location</label>
+        </div>
+
+        <div class="field">
+          <input type="file" id="image" name="image" accept="image/*" />
+          <label for="image">Upload Image</label>
+        </div>
+
+        <div class="field">
+          <textarea
+            placeholder="Summary of your complaint"
+            id="summary"
+            name="summary"
+            rows="4"
+            cols="30"
+            required
+          ></textarea>
+          <label for="summary"></label>
+        </div>
+
+        <div class="field">
+          <a href="/pages/index3.html">
+            <input type="submit" value="Submit Complaint" />
+          </a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
